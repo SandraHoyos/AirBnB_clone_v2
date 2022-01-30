@@ -22,10 +22,10 @@ def hbnb():
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def ctext(text):
+def c_is_fun(text):
     """ returns C followed by the value text variable """
-    parameter = text.replace('_', ' ')
-    return "C {}".format(escape(parameter))
+    txt = text.replace('_', ' ')
+    return "C {}".format(escape(txt))
 
 
 if __name__ == '__main__':
