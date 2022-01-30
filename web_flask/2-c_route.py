@@ -22,7 +22,7 @@ def hbnb():
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def ctext(parameter):
+def ctext(text):
     """ returns C followed by the value text variable """
     parameter = text.replace('_', ' ')
     return "C {}".format(escape(parameter))
