@@ -22,8 +22,8 @@ def hbnb():
 
 
 @app.route('/c/<text>', strict_slashes=False)
-def c_is_fun(text):
-    """ returns C followed by the value text variable """
+def C_is_fun(text):
+    """returns a parameter by url as string"""
     txt = text.replace('_', ' ')
     return "C {}".format(escape(txt))
 
