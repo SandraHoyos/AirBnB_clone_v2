@@ -2,15 +2,20 @@
 """
 script that starts a Flask web application
 """
+
 from flask import Flask
+
 app = Flask(__name__)
+
 @app.route('/', strict_slashes=False)
+
 def hello_world():
     """function that returns Hello HBNB! """
     return 'Hello HBNB!'
 
 
 @app.route('/hbnb', strict_slashes=False)
+
 def HBNB():
     """ function that returns HBNB """
     return 'HBNB'
