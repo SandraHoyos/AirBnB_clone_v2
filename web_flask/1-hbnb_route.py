@@ -6,10 +6,12 @@ from flask import Flask
 app = Flask(__name__)
 @app.route('/', strict_slashes=False)
 def hello_world():
-    return 'Hello HBNB'
+    """function that returns Hello HBNB! """
+    return 'Hello HBNB!'
 
 
 @app.route('/hbnb', strict_slashes=False)
+""" function that returns HBNB """
 def HBNB():
     return 'HBNB'
 
