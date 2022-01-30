@@ -1,4 +1,4 @@
-#!usr/bin/python3
+#!/usr/bin/python3
 """
 script that starts a Flask web application
 """
@@ -11,8 +11,8 @@ def hello_world():
 
 
 @app.route('/hbnb', strict_slashes=False)
-""" function that returns HBNB """
 def HBNB():
+    """ function that returns HBNB """
     return 'HBNB'
 
 
