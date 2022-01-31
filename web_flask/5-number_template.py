@@ -1,8 +1,11 @@
 #!/usr/bin/python3
-from flask import Flask
+
 """
 intializing flask web app to listen on 0.0.0.0:5000
 """
+
+from flask import Flask
+
 app = Flask(__name__)
 app.url_map.strict_slashes = False
 
@@ -47,6 +50,14 @@ def number(n):
     """
     if isinstance(n, int):
         return ("{:d} is a number".format(n))
+
+
+@app.route('/number_template/<int:n>')
+def template(n):
+    """
+    routes number_templates with n integer
+    """
+    return (render_template('5-number.html', n=n))
 
 
 if __name__ == "__main__":
